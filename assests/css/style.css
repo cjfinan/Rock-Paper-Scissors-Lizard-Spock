@@ -7,11 +7,11 @@
 body{
     background: url(/assests/images/space-background.jpg) no-repeat center center;
     background-size: cover;
+    color: white;
 }
 
 #heading-area{
-    background-color: black;
-    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100px;
     margin-bottom: 1em;
 }
@@ -25,11 +25,10 @@ body{
 
 #game-area{
     width: 66%;
-    height: 30em;
-    background-color: grey;
+    height: 25em;
+    background-color: rgba(0, 0, 0, 0.5);
     margin-left: auto;
     margin-right: auto;
-    opacity: 0.8;
     border: 3px solid white;
     border-radius: 10px;
 }
@@ -60,6 +59,7 @@ body{
     width: 50%;
     text-align: center;
     margin-top: 20px;
+    font-size: 45px;
 }
 
 #computer-score-div{
@@ -67,6 +67,24 @@ body{
     width: 50%;
     text-align: center;
     margin-top: 20px;
+    font-size: 45px;
+}
+
+#game-area-results{
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid white;
+    margin-top: 200px;
+    width: 50%;
+    height: 50px;
+    border-radius: 8px;
+    
+}
+
+#game-result{
+    text-align: center;
+    
+ 
 }
 
 #controls-area{
