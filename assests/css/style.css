@@ -34,6 +34,36 @@ body{
     border-radius: 10px;
 }
 
+.scores-area{
+    height: 100px;
+    margin-top: 25px;
+}
+
+#user-heading, #best-of, #computer-heading{
+    padding-left: 21%;
+    font-size: 2em;
+}
+
+#user-heading{
+  text-align: left;
+  margin-top: 2em;
+  
+ 
+}
+
+#best-of{
+    text-align: center;
+   
+    
+}
+
+#computer-heading{
+    text-align: right;
+    padding-top: 2em;
+}
+
+
+
 .controls-area{
     width: 66%;
     margin-left: auto;
