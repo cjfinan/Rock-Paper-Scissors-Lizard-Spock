@@ -35,34 +35,25 @@ body{
 }
 
 .scores-area{
-    height: 100px;
-    margin-top: 25px;
-}
-
-#user-heading, #best-of, #computer-heading{
-    padding-left: 21%;
-    font-size: 2em;
-}
-
-#user-heading{
-  text-align: left;
-  margin-top: 2em;
-  
- 
+    height: 50px;
+    margin-top: 15px;
 }
 
 #best-of{
     text-align: center;
-   
-    
+}
+
+#user-heading{
+    float: left;
+    width: 50%;
+    text-align: center;
 }
 
 #computer-heading{
-    text-align: right;
-    padding-top: 2em;
+    float: right;
+    width: 50%;
+    text-align: center;
 }
-
-
 
 .controls-area{
     width: 66%;
