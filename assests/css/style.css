@@ -121,6 +121,8 @@ body{
 }
 
 #rules-button{
+    padding-top: 10px;
+    text-align: center;
     height: 2em;
     width: 100%;
     border-radius: 10px;
@@ -128,7 +130,5 @@ body{
     border: 3px solid white;
     background-color:rgba(0, 0, 0, 0.5);
     font-size: 25px;
- 
-  
-  
 }
+

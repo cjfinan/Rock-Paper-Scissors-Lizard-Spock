@@ -34,5 +34,5 @@ function runGame(userChoice, computerChoice){
 function rules(){
     rulesButton.style.height = "200px";
     rulesButton.style.textAlign = "center"
-    rulesButton.innerHTML=`Click on a icon to play vs the computer!<span id=rules-button-span> Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.</span>Have FUN!`
+    rulesButton.innerHTML=`Click on a icon to play vs the computer! <br> The rules are as follows: Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors. Have FUN!`
 }
