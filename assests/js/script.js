@@ -1,3 +1,5 @@
+let rulesButton = document.getElementById("rules-button")
+rulesButton.addEventListener("click", rules)
 
 
 let buttons = document.getElementsByClassName("btn")
@@ -9,6 +11,11 @@ for(let button of buttons){
 function userChoice(computerChoice){
     let userAnswer = this.getAttribute("id")
 console.log(this.getAttribute("id"))
+
+let randomNum = Math.floor(Math.random() * buttons.length);
+let randomChoice = buttons[randomNum]
+let randomChoiceId = randomChoice.getAttribute("id")
+console.log(randomChoiceId)
 }
 
 function computerChoice(){
@@ -18,9 +25,14 @@ function computerChoice(){
     console.log(randomChoiceId)
 }
 
-function runGame(userAnswer){
+function runGame(userChoice, computerChoice){
     if(userAnswer === "rock" && randomChoiceId === "rock"){
         document.getElementById("game-result").innerHTML = "YOU ROCK"
     }
 }
 
+function rules(){
+    rulesButton.style.height = "200px";
+    rulesButton.style.textAlign = "center"
+    rulesButton.innerHTML=`Click on a icon to play vs the computer!<span id=rules-button-span> Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors.</span>Have FUN!`
+}
