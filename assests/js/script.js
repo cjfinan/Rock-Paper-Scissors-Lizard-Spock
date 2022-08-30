@@ -1,27 +1,25 @@
-
-document.addEventListener("DOMContentLoaded", userChoice)
-
-
-
-function userChoice(){
-    let buttons = document.getElementsByClassName("btn")
-console.log("test1")
+let buttons = document.getElementsByClassName("btn")
 
 for(let button of buttons){
-    button.addEventListener("click", runGame)
-    let gameType = button.getAttribute("data-type");
-    runGame(gameType);
-    console.log(gameType)
-    }}
+   button.addEventListener("click", userChoice)
+}
+  
+function userChoice(){
+    let userAnswer = this.getAttribute("id")
+console.log(this.getAttribute("id"))
 
-function computerChice(){}
 
-function runGame(){}
+let randomNum = Math.floor(Math.random() * buttons.length);
+let randomChoice = buttons[randomNum]
+let randomChoiceId = randomChoice.getAttribute("id")
+console.log(randomChoiceId)
 
-function incrementUserScore(){}
+}
 
-function incrementComputerScore(){}
+function computerChoice(){
+  
+    
+    
+}
 
-function results(){}
 
-function endGame(){}
