@@ -12,10 +12,6 @@ function userChoice(computerChoice){
     let userAnswer = this.getAttribute("id")
 console.log(this.getAttribute("id"))
 
-let randomNum = Math.floor(Math.random() * buttons.length);
-let randomChoice = buttons[randomNum]
-let randomChoiceId = randomChoice.getAttribute("id")
-console.log(randomChoiceId)
 }
 
 function computerChoice(){
