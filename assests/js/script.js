@@ -1,34 +1,85 @@
-let rulesButton = document.getElementById("rules-button")
-rulesButton.addEventListener("click", rules)
 
+let rulesButton = document.getElementById("rules-button");
+rulesButton.addEventListener("click", rules);
 
-let buttons = document.getElementsByClassName("btn")
+let buttons = document.getElementsByClassName("btn");
 
-for(let button of buttons){
-   button.addEventListener("click", runRound);
-    let userAnswer = this.getAttribute("id");
+for(let button of buttons) {
+  button.addEventListener("click", runRound);
 }
 
+
+
+    
 
 function computerChoice(){
     let randomNum = Math.floor(Math.random() * buttons.length);
     let randomChoice = buttons[randomNum];
     let randomChoiceId = randomChoice.getAttribute("id");
-    console.log(randomChoiceId);
+    console.log(randomChoiceId, "this is the computers choice");
     return randomChoiceId;
 }
 
-function runRound(){
-    let randomAnswer = computerChoice();
-    if (randomAnswer === userAnswer){
-        document.getElementById("game-result").innerHTML = "Draw! Try Again"
-    }
-
-
-
+function runRound(){ 
+    let userAnswer = this.getAttribute("id");
+    console.log(userAnswer);
+    
+    let roundOutcome = checkAnswer(userAnswer)
+    console.log(roundOutcome)
 }
 
 
+function checkAnswer(userAnswer){
+
+    let randomAnswer = computerChoice();
+
+    if (randomAnswer === userAnswer){
+        document.getElementById("game-result").innerHTML = "Draw! Try Again"
+        return 3;
+    }
+
+switch(userAnswer){
+    case "rock":
+        if (randomAnswer === "lizard" || "scisscors"){
+            document.getElementById("game-result").innerHTML = `Well Done! ${userAnswer} beats ${randomAnswer}!`
+            return 1;
+        } else {
+            return 0;
+        }
+       
+    case "paper":
+        if (randomAnswer === "rock" || "spock"){
+            return 1;
+        } else {
+            return 0;
+    
+    }
+
+    case "scissors":
+        if (randomAnswer === "paper" || "lizard"){
+            return 1;
+        } else{
+            return 0;
+        }
+  
+
+     case "lizard":
+        if (randomAnswer === "spock" || "paper"){
+            return 1;
+            
+        } else {
+            return 0;
+        } 
+
+    case "spock":
+        if (randomAnswer === "rock" || "scissors"){
+            return 1;
+        } else {
+            return 0;
+        }
+}
+
+}
 
 function incrementUserScore(){
     let userScore = parseInt(document.getElementById("user-score-number").innerHTML)
