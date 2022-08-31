@@ -9,9 +9,7 @@ body{
     background-size: cover;
     color: white;
     font-family: 'Oswald', sans-serif;
-    
- 
- 
+
 }
 
 #heading-area{
@@ -112,6 +110,14 @@ body{
     border-radius: 50%;
     margin: 10px 60px 0 60px;
     font-size: 40px;
+    display: flexbox;
+}
+
+.btn:hover{
+    transform:scale(1.2);
+    border: 5px solid white;
+    color: white;
+    background-color: rgb(127, 63, 191);
 }
 
 #rules-area{
