@@ -5,7 +5,7 @@ rulesButton.addEventListener("click", rules)
 let buttons = document.getElementsByClassName("btn")
 
 for(let button of buttons){
-   button.addEventListener("click", userChoice);
+   button.addEventListener("click", runRound);
     let userAnswer = this.getAttribute("id");
 }
 
@@ -18,10 +18,15 @@ function computerChoice(){
     return randomChoiceId;
 }
 
-function runGame(userChoice, computerChoice){
+function runRound(){
     let randomAnswer = computerChoice();
+    if (randomAnswer === userAnswer){
+        document.getElementById("game-result").innerHTML = "Draw! Try Again"
+    }
 
-      }
+
+
+}
 
 
 
