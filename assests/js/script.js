@@ -5,27 +5,25 @@ rulesButton.addEventListener("click", rules)
 let buttons = document.getElementsByClassName("btn")
 
 for(let button of buttons){
-   button.addEventListener("click", userChoice)
+   button.addEventListener("click", userChoice);
+    let userAnswer = this.getAttribute("id");
 }
-  
-function userChoice(computerChoice){
-    let userAnswer = this.getAttribute("id")
-console.log(this.getAttribute("id"))
 
-}
 
 function computerChoice(){
     let randomNum = Math.floor(Math.random() * buttons.length);
-    let randomChoice = buttons[randomNum]
-    let randomChoiceId = randomChoice.getAttribute("id")
-    console.log(randomChoiceId)
+    let randomChoice = buttons[randomNum];
+    let randomChoiceId = randomChoice.getAttribute("id");
+    console.log(randomChoiceId);
+    return randomChoiceId;
 }
 
 function runGame(userChoice, computerChoice){
-    if(userAnswer === "rock" && randomChoiceId === "rock"){
-        document.getElementById("game-result").innerHTML = "Draw"
-    }
-}
+    let randomAnswer = computerChoice();
+
+      }
+
+
 
 function incrementUserScore(){
     let userScore = parseInt(document.getElementById("user-score-number").innerHTML)
