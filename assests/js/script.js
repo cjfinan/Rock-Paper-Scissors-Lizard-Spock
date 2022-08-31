@@ -23,7 +23,7 @@ function computerChoice(){
 
 function runGame(userChoice, computerChoice){
     if(userAnswer === "rock" && randomChoiceId === "rock"){
-        document.getElementById("game-result").innerHTML = "YOU ROCK"
+        document.getElementById("game-result").innerHTML = "Draw"
     }
 }
 
