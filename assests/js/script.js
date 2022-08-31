@@ -27,6 +27,16 @@ function runGame(userChoice, computerChoice){
     }
 }
 
+function incrementUserScore(){
+    let userScore = parseInt(document.getElementById("user-score-number").innerHTML)
+    document.getElementById("user-score-number").innerHTML = ++userScore;
+}
+
+function incrementComputerScore(){
+    let computerScore = parseInt(document.getElementById("computer-score-number").innerHTML)
+    document.getElementById("computer-score-number").innerHTML = ++computerScore;
+}
+
 function rules(){
     rulesButton.style.height = "200px";
     rulesButton.style.textAlign = "center"
