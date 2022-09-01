@@ -51,32 +51,39 @@ switch(userAnswer){
        
     case "paper":
         if ((randomAnswer === "rock") || (randomAnswer === "spock")){
+            document.getElementById("game-result").innerHTML = `Well Done! ${userAnswer} beats ${randomAnswer}!`
             return 1;
         } else {
+            document.getElementById("game-result").innerHTML = `Unlucky! ${randomAnswer} beats ${userAnswer}!`
             return 2;
     
     }
 
     case "scissors":
         if ((randomAnswer === "paper") || (randomAnswer === "lizard")){
+            document.getElementById("game-result").innerHTML = `Well Done! ${userAnswer} beats ${randomAnswer}!`
             return 1;
         } else{
+            document.getElementById("game-result").innerHTML = `Unlucky! ${randomAnswer} beats ${userAnswer}!`
             return 2;
         }
   
 
      case "lizard":
         if ((randomAnswer === "spock") || (randomAnswer === "paper")){
+            document.getElementById("game-result").innerHTML = `Well Done! ${userAnswer} beats ${randomAnswer}!`
             return 1;
-            
         } else {
+            document.getElementById("game-result").innerHTML = `Unlucky! ${randomAnswer} beats ${userAnswer}!`
             return 2;
         } 
 
     case "spock":
         if ((randomAnswer === "rock") || (randomAnswer === "scissors")){
+            document.getElementById("game-result").innerHTML = `Well Done! ${userAnswer} beats ${randomAnswer}!`
             return 1;
         } else {
+            document.getElementById("game-result").innerHTML = `Unlucky! ${randomAnswer} beats ${userAnswer}!`
             return 2;
         }
 }
