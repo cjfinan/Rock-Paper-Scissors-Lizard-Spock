@@ -71,8 +71,6 @@ function checkAnswer(userAnswer){
         return 3;
     }
 
-   
-
 switch(userAnswer){
     case "rock":
         if ((randomAnswer === "lizard") || (randomAnswer === "scissors")){
