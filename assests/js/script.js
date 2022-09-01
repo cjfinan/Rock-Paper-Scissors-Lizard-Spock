@@ -45,7 +45,13 @@ function runRound(){
     
     
     if (userScore === 5){
-       document.getElementById("game-result").innerHTML = `CONGRATULATIONS! you have beaten the computer! <br> The page will now refresh if you would like to try again!`
+       document.getElementById("game-area-results").style.height = "130px"
+       document.getElementById("game-result").innerHTML = `<strong>CONGRATULATIONS!</strong> you have beaten the computer! <br> The page will now refresh if you would like to try again!`
+       setTimeout(endGame, 7000)
+    }else if (computerScore === 5){
+        document.getElementById("game-area-results").style.height = "130px"
+        document.getElementById("game-result").innerHTML = `<strong>IS THAT THE BEST YOU CAN DO?!</strong> <br> The page will now refresh if you would like to try again!`
+        setTimeout(endGame, 7000)
     }
 
 }
@@ -64,7 +70,7 @@ function checkAnswer(userAnswer){
 
 switch(userAnswer){
     case "rock":
-        if ((randomAnswer === "lizard") || (randomAnswer === "scisscors")){
+        if ((randomAnswer === "lizard") || (randomAnswer === "scissors")){
             document.getElementById("game-result").innerHTML = `Well Done! ${userAnswer} beats ${randomAnswer}!`;
             return 1;
         } else {
@@ -130,4 +136,9 @@ function computerScoreChange(){
     document.getElementById("game-area-results").style.borderColor = "white";
     document.getElementById("game-area").style.borderColor = "white";
 }
+
+function endGame(){
+    window.location.reload();
+}
+
 
