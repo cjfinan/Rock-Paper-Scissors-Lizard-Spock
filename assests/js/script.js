@@ -29,6 +29,7 @@ function runRound(){
     let userScore = parseInt(document.getElementById("user-score-number").innerHTML);
     let computerScore = parseInt(document.getElementById("computer-score-number").innerHTML);
 
+
     if (roundOutcome === 1){
         document.getElementById("user-score-number").innerHTML = ++userScore;
         document.getElementById("user-score-number").style.color = "rgb(32, 247, 90)";
@@ -47,10 +48,12 @@ function runRound(){
     if (userScore === 5){
        document.getElementById("game-area-results").style.height = "130px"
        document.getElementById("game-result").innerHTML = `<strong>CONGRATULATIONS!</strong> you have beaten the computer! <br> The page will now refresh if you would like to try again!`
+       setTimeout(hideButtons, 50)
        setTimeout(endGame, 7000)
     }else if (computerScore === 5){
         document.getElementById("game-area-results").style.height = "130px"
         document.getElementById("game-result").innerHTML = `<strong>IS THAT THE BEST YOU CAN DO?!</strong> <br> The page will now refresh if you would like to try again!`
+        setTimeout(hideButtons, 50)
         setTimeout(endGame, 7000)
     }
 
@@ -141,4 +144,8 @@ function endGame(){
     window.location.reload();
 }
 
-
+function hideButtons(){
+    for(let button of buttons) {
+        button.style.display = "none"
+      }
+}
