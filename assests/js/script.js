@@ -16,7 +16,6 @@ function computerChoice(){
     let randomNum = Math.floor(Math.random() * buttons.length);
     let randomChoice = buttons[randomNum];
     let randomChoiceId = randomChoice.getAttribute("id");
-    console.log(randomChoiceId, "this is the computers choice");
     return randomChoiceId;
 }
 
@@ -32,50 +31,53 @@ function runRound(){
 function checkAnswer(userAnswer){
 
     let randomAnswer = computerChoice();
-
+    console.log(randomAnswer);
     if (randomAnswer === userAnswer){
         document.getElementById("game-result").innerHTML = "Draw! Try Again"
         return 3;
     }
 
+   
+
 switch(userAnswer){
     case "rock":
-        if (randomAnswer === "lizard" || "scisscors"){
+        if ((randomAnswer === "lizard") || (randomAnswer === "scisscors")){
             document.getElementById("game-result").innerHTML = `Well Done! ${userAnswer} beats ${randomAnswer}!`
             return 1;
         } else {
-            return 0;
+            document.getElementById("game-result").innerHTML = `Unlucky! ${randomAnswer} beats ${userAnswer}!`
+            return 2;
         }
        
     case "paper":
-        if (randomAnswer === "rock" || "spock"){
+        if ((randomAnswer === "rock") || (randomAnswer === "spock")){
             return 1;
         } else {
-            return 0;
+            return 2;
     
     }
 
     case "scissors":
-        if (randomAnswer === "paper" || "lizard"){
+        if ((randomAnswer === "paper") || (randomAnswer === "lizard")){
             return 1;
         } else{
-            return 0;
+            return 2;
         }
   
 
      case "lizard":
-        if (randomAnswer === "spock" || "paper"){
+        if ((randomAnswer === "spock") || (randomAnswer === "paper")){
             return 1;
             
         } else {
-            return 0;
+            return 2;
         } 
 
     case "spock":
-        if (randomAnswer === "rock" || "scissors"){
+        if ((randomAnswer === "rock") || (randomAnswer === "scissors")){
             return 1;
         } else {
-            return 0;
+            return 2;
         }
 }
 
