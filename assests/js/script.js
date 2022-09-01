@@ -25,13 +25,29 @@ function runRound(){
     
     let roundOutcome = checkAnswer(userAnswer)
     console.log(roundOutcome)
-}
 
+    if (roundOutcome === 1){
+        let userScore = parseInt(document.getElementById("user-score-number").innerHTML)
+        document.getElementById("user-score-number").innerHTML = ++userScore;
+        document.getElementById("user-score-number").style.color = "rgb(32, 247, 90)"
+        document.getElementById("game-area-results").style.borderColor = "rgb(32, 247, 90)"
+        document.getElementById("game-area").style.borderColor = "rgb(32, 247, 90)"
+        setTimeout(userScoreChange, 500)
+     
+
+    }else if (roundOutcome === 2){
+        let computerScore = parseInt(document.getElementById("computer-score-number").innerHTML)
+    document.getElementById("computer-score-number").innerHTML = ++computerScore;
+    document.getElementById("computer-score-number").style.color = "red"
+    }
+
+}
 
 function checkAnswer(userAnswer){
 
     let randomAnswer = computerChoice();
     console.log(randomAnswer);
+
     if (randomAnswer === userAnswer){
         document.getElementById("game-result").innerHTML = "Draw! Try Again"
         return 3;
@@ -90,18 +106,14 @@ switch(userAnswer){
 
 }
 
-function incrementUserScore(){
-    let userScore = parseInt(document.getElementById("user-score-number").innerHTML)
-    document.getElementById("user-score-number").innerHTML = ++userScore;
-}
-
-function incrementComputerScore(){
-    let computerScore = parseInt(document.getElementById("computer-score-number").innerHTML)
-    document.getElementById("computer-score-number").innerHTML = ++computerScore;
-}
-
 function rules(){
     rulesButton.style.height = "200px";
     rulesButton.style.textAlign = "center"
     rulesButton.innerHTML=`Click on a icon to play vs the computer! <br> The rules are as follows: Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors. Have FUN!`
+}
+
+function userScoreChange(){
+    document.getElementById("user-score-number").style.color = "white"
+    document.getElementById("game-area-results").style.borderColor = "white"
+    document.getElementById("game-area").style.borderColor = "white"
 }
