@@ -118,6 +118,7 @@ body{
     border: 5px solid white;
     color: white;
     background-color: rgb(127, 63, 191);
+    cursor: pointer;
 }
 
 #rules-area{
@@ -140,3 +141,6 @@ body{
     font-size: 25px;
 }
 
+#rules-button:hover{
+    cursor: pointer;
+}
