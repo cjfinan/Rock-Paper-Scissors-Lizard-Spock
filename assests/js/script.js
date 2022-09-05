@@ -125,9 +125,10 @@ switch(userAnswer){
 }
 
 function rules(){
-    rulesButton.style.height = "200px";
+    rulesButton.style.height = "300px";
     rulesButton.style.textAlign = "center";
-    rulesButton.innerHTML=`Click on a icon to play vs the computer! <br> The rules are as follows: Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors. Have FUN!`;
+    rulesButton.style.fontSize = "25px";
+    rulesButton.innerHTML=`<span id="rules-button-text">Click on a icon to play vs the computer! <br> The rules are as follows: Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors. Have FUN!</span>`;
 }
 
 function userScoreChange(){
