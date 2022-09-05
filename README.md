@@ -44,3 +44,73 @@ __Rules__
 - Once Clicked instructions are clearly laid out in a easy to read fashion.
 
 ![HowToPlayClicked](./assests/images/HowToPlayClicked.png)
+
+
+## Testing
+
+__Validation Testing__
+
+- Developer tools where used to check the sites responsiveness for a range of different potential screen sizes
+
+- No errors were returned when passing it through the official [W3C validator](https://validator.w3.org/#validate_by_input)
+- No errors were returned when passing it through the official [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
+- No errors were returned when passing it through [JSHint JavaScript Validator](https://jshint.com/)
+
+__Lighthouse__ 
+
+- Lighthouse was used through chrome dev tools to analyse for the following 
+ - Performace
+ - Acessibility
+ - Best practice
+ - SEO
+
+ This was done for desktop 
+
+ ![LightHouse](./assests/images/LightHouse.png)
+
+  __Further Testing__
+
+  Testing was carried out using Chrome, Microsoft edge and firefox
+
+ Responsiveness was test through google chromes dev tools on a number of devices that include;
+  - Iphone 12 Pro
+  - Iphone SE
+  - Ipad
+  - Ipad Air
+  - Ipad Mini
+  - Pixel 5
+  - Galaxy S8+
+  - Surface Duo
+
+  ## Deployment
+
+  The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+  You can view the live site here : LINK HERE
+  ## Techonologies Used
+
+  HTML5
+  CSS3
+  JavaScript
+  Balsamiq
+   
+   ## Issues / Bugs
+
+  1) Switch statement 
+     - incorrect syntax to allow for two conditions within the same if statement
+
+  2) UserChoice function
+     - Originally i had a UserChoice fucntion but i encountered a problem where i could not access the users choice from another function so to get around this i removed the function all together and make it global.
+
+  3) Typos
+     - When proof reading through the website typos were corrected
+
+
+  ## Credits
+
+ ### Content
+  - The icons within the wbesite were taken from [Font Awesome](https://fontawesome.com/)
+  - [w3schools](https://www.w3schools.com/) was used to refresh myself on certain topics and learn new ones

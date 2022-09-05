@@ -46,19 +46,19 @@ function runRound(){
     
     
     if (userScore === 5){
-       document.getElementById("game-area-results").style.height = "130px"
-       document.getElementById("game-area-results").style.width = "80%"
-       document.getElementById("game-area-results").style.backgroundColor = "green"
-       document.getElementById("game-result").innerHTML = `<strong>CONGRATULATIONS!</strong> you have beaten the computer! <br> The page will now refresh if you would like to try again!`
-       setTimeout(hideButtons, 50)
-       setTimeout(endGame, 7000)
+       document.getElementById("game-area-results").style.height = "130px";
+       document.getElementById("game-area-results").style.width = "80%";
+       document.getElementById("game-area-results").style.backgroundColor = "green";
+       document.getElementById("game-result").innerHTML = `<strong>CONGRATULATIONS!</strong> you have beaten the computer! <br> The page will now refresh if you would like to try again!`;
+       setTimeout(hideButtons, 50);
+       setTimeout(endGame, 7000);
     }else if (computerScore === 5){
-        document.getElementById("game-area-results").style.height = "130px"
-        document.getElementById("game-area-results").style.width = "80%"
-        document.getElementById("game-area-results").style.backgroundColor = "rgb(224, 25, 18)"
-        document.getElementById("game-result").innerHTML = `<strong>IS THAT THE BEST YOU CAN DO?!</strong> <br> The page will now refresh if you would like to try again!`
-        setTimeout(hideButtons, 50)
-        setTimeout(endGame, 7000)
+        document.getElementById("game-area-results").style.height = "130px";
+        document.getElementById("game-area-results").style.width = "80%";
+        document.getElementById("game-area-results").style.backgroundColor = "rgb(224, 25, 18)";
+        document.getElementById("game-result").innerHTML = `<strong>IS THAT THE BEST YOU CAN DO?!</strong> <br> The page will now refresh if you would like to try again!`;
+        setTimeout(hideButtons, 50);
+        setTimeout(endGame, 7000);
     }
 
 }
@@ -149,6 +149,6 @@ function endGame(){
 
 function hideButtons(){
     for(let button of buttons) {
-        button.style.display = "none"
+        button.style.display = "none";
       }
 }
