@@ -1,9 +1,14 @@
-
+/**
+ * Add event listner to rules button
+ */
 let rulesButton = document.getElementById("rules-button");
 rulesButton.addEventListener("click", rules);
 
 let buttons = document.getElementsByClassName("btn");
 
+/**
+ * Add event listener to all icons
+ */
 for(let button of buttons) {
   button.addEventListener("click", runRound);
 }
@@ -11,7 +16,9 @@ for(let button of buttons) {
 
 
     
-
+/**
+ * Generates random number for the number of buttons, uses buttons array to target the correct id, returns the id of random choice
+ */
 function computerChoice(){
     let randomNum = Math.floor(Math.random() * buttons.length);
     let randomChoice = buttons[randomNum];
@@ -19,6 +26,10 @@ function computerChoice(){
     return randomChoiceId;
 }
 
+/**
+ * Main function, gets the users answer through event listener and calls the checkAnswer function to produce the roundOutcome,
+ *  which will then increment score acordingly, Removes buttons on endgame and refreshes page
+ */
 function runRound(){ 
     let userAnswer = this.getAttribute("id");
     console.log(userAnswer);
@@ -63,6 +74,9 @@ function runRound(){
 
 }
 
+/**
+ * Checks userAnswer against the randomAnswer, returns value of 1,2,3 depending on win, loss or draw.
+ */
 function checkAnswer(userAnswer){
 
     let randomAnswer = computerChoice();
@@ -124,6 +138,9 @@ switch(userAnswer){
 
 }
 
+/**
+ * Called through event listener changes inner text of button to show rules of the game
+ */
 function rules(){
     rulesButton.style.height = "300px";
     rulesButton.style.textAlign = "center";
@@ -131,22 +148,34 @@ function rules(){
     rulesButton.innerHTML=`<span id="rules-button-text">Click on a icon to play vs the computer! <br> The rules are as follows: Scissors cuts paper, paper covers rock, rock crushes lizard, lizard poisons Spock, Spock smashes scissors, scissors decapitates lizard, lizard eats paper, paper disproves Spock, Spock vaporizes rock, and as it always has, rock crushes scissors. Have FUN!</span>`;
 }
 
+/**
+ * Returns colors to white after user wins round
+ */
 function userScoreChange(){
     document.getElementById("user-score-number").style.color = "white";
     document.getElementById("game-area-results").style.borderColor = "white";
     document.getElementById("game-area").style.borderColor = "white";
 }
 
+/**
+ * Returns colors to white after computer wins round
+ */
 function computerScoreChange(){
     document.getElementById("computer-score-number").style.color = "white";
     document.getElementById("game-area-results").style.borderColor = "white";
     document.getElementById("game-area").style.borderColor = "white";
 }
 
+/**
+ * Reloads window to refresh game when called
+ */
 function endGame(){
     window.location.reload();
 }
 
+/**
+ * Removes buttons from DOM
+ */
 function hideButtons(){
     for(let button of buttons) {
         button.style.display = "none";
