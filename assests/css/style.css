@@ -167,14 +167,17 @@ body{
 }
      
 @media screen and (max-width: 1080px ){
+    
     .btn{
-        margin: 10px 20px 0 20px;
+        margin: 10px 15px 0 15px;
         height: 2em;
         width: 2em;
      }
 }
 
 @media screen and (max-width: 940px ){
+    
+    
     .btn{
         margin: 10px 10px 0 10px;
      }
@@ -194,14 +197,20 @@ body{
 
 
 @media screen and (max-width: 470px ){
+    #controls-area{
+        width: 80%;
+    }
+    
     #heading{
         font-size: 25px;
     }
 
     .btn{
+        margin: 10px 10px 0 10px;
         height: 60px;
         width: 60px;
         font-size: 30px;
     }
+
 }
 
