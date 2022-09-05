@@ -208,3 +208,15 @@ body{
      }
 }
 
+@media screen and (max-width: 470px ){
+    #heading{
+        font-size: 25px;
+    }
+
+    .btn{
+        height: 60px;
+        width: 60px;
+        font-size: 30px;
+    }
+}
+
