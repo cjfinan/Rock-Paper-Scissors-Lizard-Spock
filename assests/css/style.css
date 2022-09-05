@@ -9,6 +9,7 @@ body{
     background-size: cover;
     color: white;
     font-family: 'Oswald', sans-serif;
+    
 
 }
 
@@ -200,6 +201,10 @@ body{
 @media screen and (max-width: 940px ){
     .btn{
         margin: 10px 10px 0 10px;
+     }
+
+     #game-area-results{
+        height: 100px;
      }
 }
 
