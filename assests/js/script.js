@@ -32,10 +32,10 @@ function computerChoice(){
  */
 function runRound(){ 
     let userAnswer = this.getAttribute("id");
-    console.log(userAnswer);
+    
     
     let roundOutcome = checkAnswer(userAnswer);
-    console.log(roundOutcome);
+    
 
     let userScore = parseInt(document.getElementById("user-score-number").innerHTML);
     let computerScore = parseInt(document.getElementById("computer-score-number").innerHTML);
