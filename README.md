@@ -1,4 +1,4 @@
-# Rock - Paper - Scissors - Lizard - Spock
+Rock - Paper - Scissors - Lizard - Spock
 
 Welcome to Rock - Paper - Scissors - Lizard - Spock! The rock paper scissors game with a twist, test your luck and try to beat the computer in a game of first to 5! Whats your next move?!
 
