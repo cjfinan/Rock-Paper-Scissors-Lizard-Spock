@@ -11,7 +11,7 @@ body, html{
 }
 
 body{
-    background: url(/assests/images/space-background.jpg) no-repeat center center fixed;
+    background: url(../images/space-background.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
