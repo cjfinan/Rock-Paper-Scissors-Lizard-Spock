@@ -11,7 +11,7 @@ body, html{
 }
 
 body{
-    background: url(/assests/images/space-background.jpg) no-repeat center center fixed;
+    background: url(../images/space-background.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -102,6 +102,8 @@ body{
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
    
 }
 

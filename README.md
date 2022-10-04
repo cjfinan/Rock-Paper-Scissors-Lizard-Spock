@@ -1,4 +1,4 @@
-# Rock - Paper - Scissors - Lizard - Spock
+Rock - Paper - Scissors - Lizard - Spock
 
 Welcome to Rock - Paper - Scissors - Lizard - Spock! The rock paper scissors game with a twist, test your luck and try to beat the computer in a game of first to 5! Whats your next move?!
 
@@ -103,9 +103,11 @@ __Lighthouse__
 
   1) Switch statement 
      - incorrect syntax to allow for two conditions within the same if statement
+      - Before - if (randomAnswer === "lizard" || randomAnswer === "scissors")
+      - Fixed - if ((randomAnswer === "lizard") || (randomAnswer === "scissors"))
 
   2) UserChoice function
-     - Originally i had a UserChoice fucntion but i encountered a problem where i could not access the users choice from another function so to get around this i removed the function all together and make it global.
+     - Originally i had a UserChoice function but i encountered a problem where i could not access the users choice from another function so to get around this i removed the function all together and made it global.
 
   3) Typos
      - When proof reading through the website typos were corrected
