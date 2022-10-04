@@ -2,7 +2,7 @@ Rock - Paper - Scissors - Lizard - Spock
 
 Welcome to Rock - Paper - Scissors - Lizard - Spock! The rock paper scissors game with a twist, test your luck and try to beat the computer in a game of first to 5! Whats your next move?!
 
-![You can view the site live here!](https://cjfinan.github.io/Rock-Paper-Scissors-Lizard-Spock/)
+[You can view the site live here!](https://cjfinan.github.io/Rock-Paper-Scissors-Lizard-Spock/)
 
 ![Responsive Design](./assests/images/responsive.png)
 
