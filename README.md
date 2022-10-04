@@ -2,6 +2,8 @@
 
 Welcome to Rock - Paper - Scissors - Lizard - Spock! The rock paper scissors game with a twist, test your luck and try to beat the computer in a game of first to 5! Whats your next move?!
 
+![You can view the site live here!](https://cjfinan.github.io/Rock-Paper-Scissors-Lizard-Spock/)
+
 ![Responsive Design](./assests/images/responsive.png)
 
 ## Features
@@ -89,7 +91,7 @@ __Lighthouse__
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-  You can view the live site here : LINK HERE
+  
   ## Techonologies Used
 
   HTML5
